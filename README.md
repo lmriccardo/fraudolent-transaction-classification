@@ -61,3 +61,5 @@ The following tables shows the results given by the previous experiments
 | **Logistic Regression** |    0.977 -    |                  |      0.973      | - 0.974 |
 | **Decision Tree**       |               |                  |                 |         |
 | **Random Forest**       |               |                  |                 |         |
+
+In a cell `X - Y` means that `X` has been obtained with standardization (i.e., applying the StandardScaler) while `Y` without standardization.

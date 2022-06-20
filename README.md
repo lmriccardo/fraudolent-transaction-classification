@@ -62,4 +62,10 @@ The following tables shows the results given by the previous experiments
 | **Decision Tree**       |               |                  |                 |         |
 | **Random Forest**       |               |                  |                 |         |
 
-In a cell `X - Y` means that `X` has been obtained with standardization (i.e., applying the StandardScaler) while `Y` without standardization.
+`X - Y` means that `X` obtained with standardization (i.e., applying the StandardScaler) while `Y` not.
+
+---
+
+## Further Informations
+
+The entire project has been written using the **PySpark** framework on the **Community Edition Databricks** platform.

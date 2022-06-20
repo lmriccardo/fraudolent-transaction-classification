@@ -40,4 +40,4 @@ While, in Identity table variables are identity information - network connection
 
 Like I said, I used three classical Machine Learning models to the end of the project: *Logistic Regression*, *Decision Tree* and *Random Forest*. To make predictions be more accurate I choose to apply each of the previous three models using a **K-Fold Cross Validation** approach with K=5. In this way I also fine-tuned model's parameter: `regParam` and `elasticNetParam` (for LR), `maxDepth` and `Impurity` (for DT), and, `maxDepth` and `numTrees` (for RF). Before the Cross Validator I decided to apply a simple initial pipeline consisting of: StringIndexer, OneHotEncoder, VectorAssembler and StandardScaler. Finally, this is the overall ML Pipeline
 
-![Machine Learning Pipeline](https://imgur.com/a/NDz3fWQ)
+<img src="https://i.imgur.com/vRtnUHf.png" alt="Machine Learning Pipeline" />

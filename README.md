@@ -34,6 +34,8 @@ The data I used is available on Kaggle at this [link](https://www.kaggle.com/c/i
 
 While, in Identity table variables are identity information - network connection information (IP, ISP, Proxy, etc) and digital signature (UA/browser/os/version, etc) associated with transactions. `id01` to `id11`are numerical features for identity, which is collected by Vesta and security partners such as device rating, ip_domain rating, proxy rating, etc. All of these are not able to elaborate due to security. `DeviceType` is the type of the device used to pay (`nan`, `mobile`, `desktop`), while `DeviceInfo` describes the type of devices used like SAMSUNG, HUAWEILDN and LG, etc. 
 
+In total the dataset has 590540 entires per 434 features.
+
 ---
 
 ## Machine Learning Pipeline
@@ -41,3 +43,21 @@ While, in Identity table variables are identity information - network connection
 Like I said, I used three classical Machine Learning models to the end of the project: *Logistic Regression*, *Decision Tree* and *Random Forest*. To make predictions be more accurate I choose to apply each of the previous three models using a **K-Fold Cross Validation** approach with K=5. In this way I also fine-tuned model's parameter: `regParam` and `elasticNetParam` (for LR), `maxDepth` and `Impurity` (for DT), and, `maxDepth` and `numTrees` (for RF). Before the Cross Validator I decided to apply a simple initial pipeline consisting of: StringIndexer, OneHotEncoder, VectorAssembler and StandardScaler. Finally, this is the overall ML Pipeline
 
 <img src="https://i.imgur.com/vRtnUHf.png" alt="Machine Learning Pipeline" />
+
+According to the above image StandardScaler and OneHotEncoder are inside an "Optional" Box. That's because: OneHotEncoder is used only if the train set contains also categorical features, except for Decision Tree in which it is not applied at all; StandardScaler is applied only if it is required by the experiments.
+
+---
+
+## Experiments and Results
+
+The following image describes the runned experiments
+
+<img src="https://i.imgur.com/5eTQUGE.png" alt="Experiments" />
+
+The following tables shows the results given by the previous experiments
+
+|                         | **Numerical** | **All Features** | **Categorical** | **Mix** |
+|-------------------------|:-------------:|:----------------:|:---------------:|:-------:|
+| **Logistic Regression** |    0.977 -    |                  |      0.973      | - 0.974 |
+| **Decision Tree**       |               |                  |                 |         |
+| **Random Forest**       |               |                  |                 |         |

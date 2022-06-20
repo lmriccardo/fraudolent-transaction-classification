@@ -56,11 +56,11 @@ The following image describes the runned experiments
 
 The following tables shows the results given by the previous experiments
 
-|                         | **Numerical** | **All Features** | **Categorical** | **Mix** |
-|-------------------------|:-------------:|:----------------:|:---------------:|:-------:|
-| **Logistic Regression** |    0.977 -    |                  |      0.973      | - 0.974 |
-| **Decision Tree**       |               |                  |                 |         |
-| **Random Forest**       |               |                  |                 |         |
+|                         |  **Numerical**  | **All Features** | **Categorical** | **Mix** |
+|-------------------------|:---------------:|:----------------:|:---------------:|:-------:|
+| **Logistic Regression** | 0.9772 - 0.9773 |                  |      0.973      | - 0.974 |
+| **Decision Tree**       |                 |                  |                 |         |
+| **Random Forest**       |                 |                  |                 |         |
 
 `X - Y` means that `X` obtained with standardization (i.e., applying the StandardScaler) while `Y` not.
 

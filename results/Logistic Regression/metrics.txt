@@ -133,3 +133,29 @@ LogisticRegressionModel: uid=LogisticRegression_7bf5241b6fdc, numClasses=2, numF
     + F1-score 0.635216247200772
     + AUC ROC 0.8247264615313225
 =============================================================================
+
+========= SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_numerical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.835
+    + Model #2 / 9 Avg. ROC AUC: 0.835
+    + Model #3 / 9 Avg. ROC AUC: 0.835
+    + Model #4 / 9 Avg. ROC AUC: 0.819
+    + Model #5 / 9 Avg. ROC AUC: 0.698
+    + Model #6 / 9 Avg. ROC AUC: 0.502
+    + Model #7 / 9 Avg. ROC AUC: 0.813
+    + Model #8 / 9 Avg. ROC AUC: 0.502
+    + Model #9 / 9 Avg. ROC AUC: 0.500
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.000]
+|----- Best Model Stages
+VectorAssembler_94f5415dd63b
+LogisticRegressionModel: uid=LogisticRegression_ff08d75fa89f, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics    
+    + Precision 0.8520780713917224
+    + Recall 0.614397603992311
+    + Accuracy 0.9772513348849945
+    + F1-score 0.7139766915538753
+    + AUC ROC 0.8340867310724085
+===============================================================================

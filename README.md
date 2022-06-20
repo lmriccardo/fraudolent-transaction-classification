@@ -8,6 +8,8 @@ Financial fraud is a problem that has proved to be a menance and has a huge impa
 
 With this project I have experienced different Machine Learning techniques to predict whether a transaction has an high probability of being fraudolent or not. To this end, I used: *Decision Trees*, *Random Forest*, (simple) *Logistic Regression* and (maybe) *Neural Network* (from scratch) approach. 
 
+---
+
 ## The Dataset
 
 The data I used is available on Kaggle at this [link](https://www.kaggle.com/c/ieee-fraud-detection). The dataset is divided into train set and test set, both in turn divided into two files called `<train|test>_identity.csv` and the second `<train|test>_transaction.csv`. Here, there is a resume of categorical and numerical features of the Transaction table:
@@ -31,3 +33,11 @@ The data I used is available on Kaggle at this [link](https://www.kaggle.com/c/i
 - `Vxxx`: Vesta engineered rich features, including ranking, counting, and other entity relations
 
 While, in Identity table variables are identity information - network connection information (IP, ISP, Proxy, etc) and digital signature (UA/browser/os/version, etc) associated with transactions. `id01` to `id11`are numerical features for identity, which is collected by Vesta and security partners such as device rating, ip_domain rating, proxy rating, etc. All of these are not able to elaborate due to security. `DeviceType` is the type of the device used to pay (`nan`, `mobile`, `desktop`), while `DeviceInfo` describes the type of devices used like SAMSUNG, HUAWEILDN and LG, etc. 
+
+---
+
+## Machine Learning Pipeline
+
+Like I said, I used three classical Machine Learning models to the end of the project: *Logistic Regression*, *Decision Tree* and *Random Forest*. To make predictions be more accurate I choose to apply each of the previous three models using a **K-Fold Cross Validation** approach with K=5. In this way I also fine-tuned model's parameter: `regParam` and `elasticNetParam` (for LR), `maxDepth` and `Impurity` (for DT), and, `maxDepth` and `numTrees` (for RF). Before the Cross Validator I decided to apply a simple initial pipeline consisting of: StringIndexer, OneHotEncoder, VectorAssembler and StandardScaler. Finally, this is the overall ML Pipeline
+
+![Machine Learning Pipeline](https://imgur.com/a/NDz3fWQ)

@@ -78,3 +78,58 @@ LogisticRegressionModel: uid=LogisticRegression_7c8a76f5915c, numClasses=2, numF
     + Accuracy 0.9733536418400877
     + F1-score 0.5897951036071062
     + AUC ROC 0.8005360406833866
+
+============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_mix_features ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.822
+    + Model #2 / 9 Avg. ROC AUC: 0.822
+    + Model #3 / 9 Avg. ROC AUC: 0.822
+    + Model #4 / 9 Avg. ROC AUC: 0.805
+    + Model #5 / 9 Avg. ROC AUC: 0.690
+    + Model #6 / 9 Avg. ROC AUC: 0.500
+    + Model #7 / 9 Avg. ROC AUC: 0.795
+    + Model #8 / 9 Avg. ROC AUC: 0.500
+    + Model #9 / 9 Avg. ROC AUC: 0.500
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[1.000]
+|----- Best Model Stages
+StringIndexerModel: uid=StringIndexer_461408f17785, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_2c21a9842244, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_04833e0c325d, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_fa305d0a1f08, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_925cf7c1bb09, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_213750a83680, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e214f081f801, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e50844313566, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_bc449788c460, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_85235beb32a8, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_527fcb936eda, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ae0442d0705f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_273fd894bfde, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b87e800911a9, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_89126ef50e0d, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7791949cb2ea, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f0fc5085a1d1, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f62168d2ca81, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_aebadb0a201c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b7e3f20f0f0b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_af40d5d172b2, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_26d32efa0e00, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f20374d557e1, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_92aa9736374d, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6f62b2626b38, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_fa9128291558, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_0bcd06230b11, handleInvalid=keep
+OneHotEncoderModel: uid=OneHotEncoder_28949d838dfc, dropLast=true, handleInvalid=keep, numInputCols=27, numOutputCols=27
+StringIndexerModel: uid=StringIndexer_ab29aaba2837, handleInvalid=keep
+VectorAssembler_2cce1c581d71
+LogisticRegressionModel: uid=LogisticRegression_7bf5241b6fdc, numClasses=2, numFeatures=238
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.7853217265015489
+    + Recall 0.533284810254879
+    + Accuracy 0.9740210843373494
+    + F1-score 0.635216247200772
+    + AUC ROC 0.8247264615313225
+=============================================================================

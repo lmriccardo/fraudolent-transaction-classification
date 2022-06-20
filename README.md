@@ -52,7 +52,7 @@ According to the above image StandardScaler and OneHotEncoder are inside an "Opt
 
 The following image describes the runned experiments
 
-<img src="https://i.imgur.com/5eTQUGE.png" alt="Experiments" width=500 height=300/>
+<img src="https://i.imgur.com/5eTQUGE.png" alt="Experiments" width=500 height=250/>
 
 The following tables shows the results given by the previous experiments
 

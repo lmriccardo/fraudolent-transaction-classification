@@ -1,0 +1,80 @@
+============ SUMMARIZING FOR EXPERIMENT lr_cv_std_only_numerical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.834
+    + Model #2 / 9 Avg. ROC AUC: 0.834
+    + Model #3 / 9 Avg. ROC AUC: 0.834
+    + Model #4 / 9 Avg. ROC AUC: 0.819
+    + Model #5 / 9 Avg. ROC AUC: 0.699
+    + Model #6 / 9 Avg. ROC AUC: 0.500
+    + Model #7 / 9 Avg. ROC AUC: 0.813
+    + Model #8 / 9 Avg. ROC AUC: 0.500
+    + Model #9 / 9 Avg. ROC AUC: 0.500
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.000]
+|----- Best Model Stages
+VectorAssembler_007acb8170df
+StandardScalerModel: uid=StandardScaler_585060084198, numFeatures=204, withMean=true, withStd=true
+LogisticRegressionModel: uid=LogisticRegression_825a9ee41b85, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.8531322765308793
+    + Recall 0.6135334836428971
+    + Accuracy 0.977247056407448
+    + F1-score 0.7137621015522558
+    + AUC ROC 0.8329825830951167
+=============================================================================
+
+============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_categorical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.798
+    + Model #2 / 9 Avg. ROC AUC: 0.798
+    + Model #3 / 9 Avg. ROC AUC: 0.798
+    + Model #4 / 9 Avg. ROC AUC: 0.788
+    + Model #5 / 9 Avg. ROC AUC: 0.690
+    + Model #6 / 9 Avg. ROC AUC: 0.500
+    + Model #7 / 9 Avg. ROC AUC: 0.780
+    + Model #8 / 9 Avg. ROC AUC: 0.500
+    + Model #9 / 9 Avg. ROC AUC: 0.500
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.500]
+|----- Best Model Stages
+StringIndexerModel: uid=StringIndexer_8e796333a4cc, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5a68f5150383, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_333cde73f514, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_2bd7c429c198, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_489156bb4dae, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_be04c9ac134c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d4690a9b2a63, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_c0d8718c58b5, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_acc544966fbd, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_82bf042c9554, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_745bd2d2e006, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_c1763bc39851, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_8d3fc8d6fa23, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d7853803bc02, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_67e1d4b9bc39, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7f34028680a0, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5f57e0b77a70, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_8ff09cf99d5d, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_884ecafb9c3f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f680b856e171, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6899ae404f07, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_465fc6ef50d2, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6c10d9f84ba1, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6f04c69f26b3, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_53ccdc21a3f2, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_966ac28851ca, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e35093cacd33, handleInvalid=keep
+OneHotEncoderModel: uid=OneHotEncoder_cd3b3b9df22a, dropLast=true, handleInvalid=keep, numInputCols=27, numOutputCols=27
+StringIndexerModel: uid=StringIndexer_add334862c8e, handleInvalid=keep
+VectorAssembler_69ffe44eebeb
+LogisticRegressionModel: uid=LogisticRegression_7c8a76f5915c, numClasses=2, numFeatures=205
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.7068766404199475
+    + Recall 0.5059873096643083
+    + Accuracy 0.9733536418400877
+    + F1-score 0.5897951036071062
+    + AUC ROC 0.8005360406833866

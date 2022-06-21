@@ -23,6 +23,7 @@ LogisticRegressionModel: uid=LogisticRegression_825a9ee41b85, numClasses=2, numF
     + Accuracy 0.977247056407448
     + F1-score 0.7137621015522558
     + AUC ROC 0.8329825830951167
+    + Matthews correlation coefficient ? 
 =============================================================================
 
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_categorical ============
@@ -78,6 +79,7 @@ LogisticRegressionModel: uid=LogisticRegression_7c8a76f5915c, numClasses=2, numF
     + Accuracy 0.9733536418400877
     + F1-score 0.5897951036071062
     + AUC ROC 0.8005360406833866
+    + Matthews correlation coefficient 0.07038847941264174
 
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_mix_features ============
 ***************** Training Summary *****************
@@ -132,6 +134,7 @@ LogisticRegressionModel: uid=LogisticRegression_7bf5241b6fdc, numClasses=2, numF
     + Accuracy 0.9740210843373494
     + F1-score 0.635216247200772
     + AUC ROC 0.8247264615313225
+    + Matthews correlation coefficient 0.19490386890155392
 =============================================================================
 
 ========= SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_numerical ============
@@ -158,6 +161,7 @@ LogisticRegressionModel: uid=LogisticRegression_ff08d75fa89f, numClasses=2, numF
     + Accuracy 0.9772513348849945
     + F1-score 0.7139766915538753
     + AUC ROC 0.8340867310724085
+    + Matthews correlation coefficient 0.40138205134483457
 ===============================================================================
 
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_std_mix_features ============
@@ -214,4 +218,5 @@ LogisticRegressionModel: uid=LogisticRegression_d78d84b124eb, numClasses=2, numF
     + Accuracy 0.9740210843373494
     + F1-score 0.635216247200772
     + AUC ROC 0.8247288343862914
+    + Matthews correlation coefficient 0.19490386890155392
 ===========================================================================

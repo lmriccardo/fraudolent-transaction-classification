@@ -42,7 +42,7 @@ In total the dataset has 590540 entires per 434 features.
 
 Like I said, I used three classical Machine Learning models to the end of the project: *Logistic Regression*, *Decision Tree* and *Random Forest*. To make predictions be more accurate I choose to apply each of the previous three models using a **K-Fold Cross Validation** approach with K=5. In this way I also fine-tuned model's parameter: `regParam` and `elasticNetParam` (for LR), `maxDepth` and `Impurity` (for DT), and, `maxDepth` and `numTrees` (for RF). Before the Cross Validator I decided to apply a simple initial pipeline consisting of: StringIndexer, OneHotEncoder, VectorAssembler and StandardScaler. Finally, this is the overall ML Pipeline
 
-<img src="https://i.imgur.com/vRtnUHf.png" alt="Machine Learning Pipeline" />
+<img src="https://i.imgur.com/JZlw5iE.png" alt="Machine Learning Pipeline" />
 
 According to the above image StandardScaler and OneHotEncoder are inside an "Optional" Box. That's because: OneHotEncoder is used only if the train set contains also categorical features, except for Decision Tree in which it is not applied at all; StandardScaler is applied only if it is required by the experiments.
 
@@ -52,7 +52,7 @@ According to the above image StandardScaler and OneHotEncoder are inside an "Opt
 
 The following image describes the runned experiments
 
-<img src="https://i.imgur.com/5eTQUGE.png" alt="Experiments" width=500 height=250/>
+<img src="https://i.imgur.com/KsJRO2H.png" alt="Experiments" width=500 height=250/>
 
 The following tables shows the results given by the previous experiments
 

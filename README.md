@@ -62,7 +62,32 @@ The following tables shows the results given by the previous experiments
 | **Decision Tree**       | 0.9773 - 0.9773  ( - )|              ()|      0.9734 () |
 | **Random Forest**       |       ()          |   ()                | ()                 |
 
+|        *AUC ROC*       |  **Numerical**  | **All Features** | **Categorical** |
+|-------------------------|:---------------:|:----------------:|:---------------:|
+| **Logistic Regression** | 0.832 - 0.834 ( - )|   **0.857** ()|      0.800 () |
+| **Decision Tree**       | 0.428 - 0.428  ( - )|              ()|      0.707 () |
+| **Random Forest**       |       ()          |   ()                | ()                 |
+
+|        *F1-Score*       |  **Numerical**  | **All Features** | **Categorical** |
+|-------------------------|:---------------:|:----------------:|:---------------:|
+| **Logistic Regression** | 0.7137 - 0.7139 ( - )|   **0.7227** ()|      0.5897 () |
+| **Decision Tree**       | 0.7138 - 0.7138  ( - )|              ()|      0.5961 () |
+| **Random Forest**       |       ()          |   ()                | ()                 |
+
+|        *Precision*       |  **Numerical**  | **All Features** | **Categorical** |
+|-------------------------|:---------------:|:----------------:|:---------------:|
+| **Logistic Regression** | 0.853 - 0.852 ( - )|   **0.858** ()|      0.706 () |
+| **Decision Tree**       | 0.878 - 0.878  ( - )|              ()|      0.732 () |
+| **Random Forest**       |       ()          |   ()                | ()                 |
+
+|        *Recall*       |  **Numerical**  | **All Features** | **Categorical** |
+|-------------------------|:---------------:|:----------------:|:---------------:|
+| **Logistic Regression** | 0.613 - 0.614 ( - )|   **0.624** ()|      0.505 () |
+| **Decision Tree**       | 0.601 - 0.601  ( - )|              ()|      0.502 () |
+| **Random Forest**       |       ()          |   ()                | ()                 |
+
 `X - Y` means that `X` obtained with standardization (i.e., applying the StandardScaler) while `Y` not.
+`X (Y)` means that `X` obtained without oversampling, while `Y` obtained with oversampling
 
 ---
 

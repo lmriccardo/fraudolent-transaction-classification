@@ -1,0 +1,52 @@
+============ SUMMARIZING FOR EXPERIMENT rf_cv_nostd_only_numerical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.698
+    + Model #2 / 9 Avg. ROC AUC: 0.742
+    + Model #3 / 9 Avg. ROC AUC: 0.724
+    + Model #4 / 9 Avg. ROC AUC: 0.765
+    + Model #5 / 9 Avg. ROC AUC: 0.824
+    + Model #6 / 9 Avg. ROC AUC: 0.824
+    + Model #7 / 9 Avg. ROC AUC: 0.836
+    + Model #8 / 9 Avg. ROC AUC: 0.848
+    + Model #9 / 9 Avg. ROC AUC: 0.848
+|----- Best model parameters according to K-Fold Cross Validation: maxDepth=[8]
+|----- Best Model Stages
+VectorAssembler_d08426e39d28
+RandomForestClassificationModel: uid=RandomForestClassifier_d4047a9dced2, numTrees=50, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.9375942755043576
+    + Recall 0.6165127687528482
+    + Accuracy 0.978928498083242
+    + F1-score 0.7438854934658496
+    + Matthews correlation coefficient 0.4515985856019011
+    + AUC ROC 0.8458992832028583
+===============================================================================
+
+============ SUMMARIZING FOR EXPERIMENT rf_cv_std_only_numerical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.698
+    + Model #2 / 9 Avg. ROC AUC: 0.751
+    + Model #3 / 9 Avg. ROC AUC: 0.725
+    + Model #4 / 9 Avg. ROC AUC: 0.761
+    + Model #5 / 9 Avg. ROC AUC: 0.824
+    + Model #6 / 9 Avg. ROC AUC: 0.822
+    + Model #7 / 9 Avg. ROC AUC: 0.837
+    + Model #8 / 9 Avg. ROC AUC: 0.848
+    + Model #9 / 9 Avg. ROC AUC: 0.848
+|----- Best model parameters according to K-Fold Cross Validation: maxDepth=[8]
+|----- Best Model Stages
+VectorAssembler_76aaad38d380
+StandardScalerModel: uid=StandardScaler_4754ec2ae0c0, numFeatures=204, withMean=true, withStd=true
+RandomForestClassificationModel: uid=RandomForestClassifier_92dce755c9dd, numTrees=100, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.9352700786462955
+    + Recall 0.6131228990094366
+    + Accuracy 0.9787359665936474
+    + F1-score 0.7406847102143052
+    + Matthews correlation coefficient 0.443797310260143

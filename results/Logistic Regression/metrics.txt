@@ -26,6 +26,89 @@ LogisticRegressionModel: uid=LogisticRegression_825a9ee41b85, numClasses=2, numF
     + Matthews correlation coefficient ? 
 =============================================================================
 
+========= SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_numerical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.835
+    + Model #2 / 9 Avg. ROC AUC: 0.835
+    + Model #3 / 9 Avg. ROC AUC: 0.835
+    + Model #4 / 9 Avg. ROC AUC: 0.819
+    + Model #5 / 9 Avg. ROC AUC: 0.698
+    + Model #6 / 9 Avg. ROC AUC: 0.502
+    + Model #7 / 9 Avg. ROC AUC: 0.813
+    + Model #8 / 9 Avg. ROC AUC: 0.502
+    + Model #9 / 9 Avg. ROC AUC: 0.500
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.000]
+|----- Best Model Stages
+VectorAssembler_94f5415dd63b
+LogisticRegressionModel: uid=LogisticRegression_ff08d75fa89f, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics    
+    + Precision 0.8520780713917224
+    + Recall 0.614397603992311
+    + Accuracy 0.9772513348849945
+    + F1-score 0.7139766915538753
+    + AUC ROC 0.8340867310724085
+    + Matthews correlation coefficient 0.40138205134483457
+===============================================================================
+
+
+============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_over_only_numerical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.844
+    + Model #2 / 9 Avg. ROC AUC: 0.844
+    + Model #3 / 9 Avg. ROC AUC: 0.844
+    + Model #4 / 9 Avg. ROC AUC: 0.833
+    + Model #5 / 9 Avg. ROC AUC: 0.807
+    + Model #6 / 9 Avg. ROC AUC: 0.784
+    + Model #7 / 9 Avg. ROC AUC: 0.829
+    + Model #8 / 9 Avg. ROC AUC: 0.783
+    + Model #9 / 9 Avg. ROC AUC: 0.730
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.500]
+|----- Best Model Stages
+VectorAssembler_60b4cccaa6e5
+LogisticRegressionModel: uid=LogisticRegression_f18ebf5560e8, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.5727320147135642
+    + Recall 0.7373129741612232
+    + Accuracy 0.9099252122124863
+    + F1-score 0.6446843409988705
+    + Matthews correlation coefficient 0.26275654685212896
+    + AUC ROC 0.8409674663052666
+====================================================================================
+
+============ SUMMARIZING FOR EXPERIMENT lr_cv_std_over_only_numerical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 9 Avg. ROC AUC: 0.844
+    + Model #2 / 9 Avg. ROC AUC: 0.844
+    + Model #3 / 9 Avg. ROC AUC: 0.844
+    + Model #4 / 9 Avg. ROC AUC: 0.833
+    + Model #5 / 9 Avg. ROC AUC: 0.807
+    + Model #6 / 9 Avg. ROC AUC: 0.784
+    + Model #7 / 9 Avg. ROC AUC: 0.829
+    + Model #8 / 9 Avg. ROC AUC: 0.783
+    + Model #9 / 9 Avg. ROC AUC: 0.730
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[1.000]
+|----- Best Model Stages
+VectorAssembler_5c194b5a3f7a
+StandardScalerModel: uid=StandardScaler_809c66dd9ca9, numFeatures=204, withMean=true, withStd=true
+LogisticRegressionModel: uid=LogisticRegression_ea5aab9746c7, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.5727320147135642
+    + Recall 0.7373129741612232
+    + Accuracy 0.9099252122124863
+    + F1-score 0.6446843409988705
+    + Matthews correlation coefficient 0.26275654685212896
+    + AUC ROC 0.8409676316474435
+==================================================================================
+
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_categorical ============
 ***************** Training Summary *****************
 |----- Average ROC Area Under the Curve for each sub models
@@ -81,29 +164,58 @@ LogisticRegressionModel: uid=LogisticRegression_7c8a76f5915c, numClasses=2, numF
     + AUC ROC 0.8005360406833866
     + Matthews correlation coefficient 0.07038847941264174
 
-========= SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_numerical ============
+============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_over_only_categorical ============
 ***************** Training Summary *****************
 |----- Average ROC Area Under the Curve for each sub models
-    + Model #1 / 9 Avg. ROC AUC: 0.835
-    + Model #2 / 9 Avg. ROC AUC: 0.835
-    + Model #3 / 9 Avg. ROC AUC: 0.835
-    + Model #4 / 9 Avg. ROC AUC: 0.819
-    + Model #5 / 9 Avg. ROC AUC: 0.698
-    + Model #6 / 9 Avg. ROC AUC: 0.502
-    + Model #7 / 9 Avg. ROC AUC: 0.813
-    + Model #8 / 9 Avg. ROC AUC: 0.502
-    + Model #9 / 9 Avg. ROC AUC: 0.500
-|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.000]
+    + Model #1 / 9 Avg. ROC AUC: 0.801
+    + Model #2 / 9 Avg. ROC AUC: 0.801
+    + Model #3 / 9 Avg. ROC AUC: 0.801
+    + Model #4 / 9 Avg. ROC AUC: 0.797
+    + Model #5 / 9 Avg. ROC AUC: 0.775
+    + Model #6 / 9 Avg. ROC AUC: 0.770
+    + Model #7 / 9 Avg. ROC AUC: 0.795
+    + Model #8 / 9 Avg. ROC AUC: 0.769
+    + Model #9 / 9 Avg. ROC AUC: 0.690
+|----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[1.000]
 |----- Best Model Stages
-VectorAssembler_94f5415dd63b
-LogisticRegressionModel: uid=LogisticRegression_ff08d75fa89f, numClasses=2, numFeatures=204
+StringIndexerModel: uid=StringIndexer_3943c40b06d9, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_bc88d1ffb683, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_dee6db64bc3c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_33c92ff24775, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_897c3e15a628, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f7b9b9400835, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_1cd7df82af68, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_c98a8ac2868b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_15c327350083, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_be713a237d32, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_217cb13cda73, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_730aa402255a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d3b33ca34aea, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_861a808a62f5, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b2822725ca7a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ac38c8157acb, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_04a4fbdb60fd, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_4acbdb8c8e42, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_4a56e44d531f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ec5b05720245, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_35ce4402cf03, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_20c8f313d290, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_c9db8e4637e6, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_da389e07e36b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_146edd665c0b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_2b748e8473de, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_063abca636ff, handleInvalid=keep
+OneHotEncoderModel: uid=OneHotEncoder_65b80e93fc16, dropLast=true, handleInvalid=keep, numInputCols=27, numOutputCols=27
+StringIndexerModel: uid=StringIndexer_d4149f528809, handleInvalid=keep
+VectorAssembler_8683d1e2ab53
+LogisticRegressionModel: uid=LogisticRegression_125122c15d8b, numClasses=2, numFeatures=205
 
 ***************** Test Summary *****************
-|----- General Metrics    
-    + Precision 0.8520780713917224
-    + Recall 0.614397603992311
-    + Accuracy 0.9772513348849945
-    + F1-score 0.7139766915538753
-    + AUC ROC 0.8340867310724085
-    + Matthews correlation coefficient 0.40138205134483457
-===============================================================================
+|----- General Metrics
+    + Precision 0.5424799017597155
+    + Recall 0.6991256097416756
+    + Accuracy 0.8604446193866374
+    + F1-score 0.6109212444325405
+    + Matthews correlation coefficient 0.18394386469431176
+    + AUC ROC 0.8017458646170735
+=================================================================================

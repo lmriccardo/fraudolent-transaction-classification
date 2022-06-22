@@ -96,3 +96,55 @@ DecisionTreeClassificationModel: uid=DecisionTreeClassifier_a35761112d71, depth=
     + Matthews correlation coefficient 0.0475399551120655
     + AUC ROC 0.7074635101835314
 =================================================================================
+
+============ SUMMARIZING FOR EXPERIMENT dt_cv_nostd_over_only_categorical ============
+***************** Training Summary *****************
+|----- Average ROC Area Under the Curve for each sub models
+    + Model #1 / 6 Avg. ROC AUC: 0.681
+    + Model #2 / 6 Avg. ROC AUC: 0.681
+    + Model #3 / 6 Avg. ROC AUC: 0.487
+    + Model #4 / 6 Avg. ROC AUC: 0.488
+    + Model #5 / 6 Avg. ROC AUC: 0.556
+    + Model #6 / 6 Avg. ROC AUC: 0.508
+|----- Best model parameters according to K-Fold Cross Validation: maxDepth=[3]; impurity=[gini]
+|----- Best Model Stages
+StringIndexerModel: uid=StringIndexer_1b13a59fca6a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_00fa768bae0c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b183033c30df, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ea94a48eb9f4, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6a4abcbb2c6f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ab8f8d94aecd, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_82a1902b5005, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_cd549af0e5ae, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_82ec0876d120, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_297dafe4f9cd, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e2c28d1e587d, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_71905ffa0e01, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e9232dc2ea0b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_1b94ee2c1da2, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6db52dee6ff2, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e5624ce99943, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_73cc3538255c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_0612d535b7f1, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f9a6230560db, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7147b0d7f1a3, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5dc920aec99c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_83316a6502fe, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_1375a063349f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_75f1a7186d88, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_94e1b3513620, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_37ae16514f54, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_45a71bf245e5, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_eaca48490e11, handleInvalid=keep
+VectorAssembler_1d29e23a0837
+DecisionTreeClassificationModel: uid=DecisionTreeClassifier_045760e48a4f, depth=3, numNodes=9, numClasses=2, numFeatures=27
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.5291488065813443
+    + Recall 0.6927250968770087
+    + Accuracy 0.7862001985213581
+    + F1-score 0.5999877029273325
+    + Matthews correlation coefficient 0.14990272275364155
+    + AUC ROC 0.6795285011417181
+======================================================================================

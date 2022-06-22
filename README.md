@@ -52,15 +52,15 @@ According to the above image StandardScaler and OneHotEncoder are inside an "Opt
 
 The following image describes the runned experiments
 
-<img src="https://i.imgur.com/KsJRO2H.png" alt="Experiments" width=500 height=250/>
+<img src="https://i.imgur.com/KsJRO2H.png" alt="Experiments" width=550 height=250/>
 
 The following tables shows the results given by the previous experiments
 
-|                         |  **Numerical**  | **All Features** | **Categorical** |    **Mix**    |
-|-------------------------|:---------------:|:----------------:|:---------------:|:-------------:|
-| **Logistic Regression** | 0.9772 - 0.9773 |                  |      0.973      | 0.974 - 0.974 |
-| **Decision Tree**       |                 |                  |                 |               |
-| **Random Forest**       |                 |                  |                 |               |
+|        *Accuracy*       |  **Numerical**  | **All Features** | **Categorical** |
+|-------------------------|:---------------:|:----------------:|:---------------:|
+| **Logistic Regression** | 0.9772 - 0.97735|   **0.9777**     |      0.9733     |
+| **Decision Tree**       | 0.9773 - 0.9773 |                  |      0.9734     |
+| **Random Forest**       |                 |                  |                 |
 
 `X - Y` means that `X` obtained with standardization (i.e., applying the StandardScaler) while `Y` not.
 

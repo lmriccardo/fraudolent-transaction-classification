@@ -58,33 +58,33 @@ The following tables shows the results given by the previous experiments
 
 |        *Accuracy*       |  **Numerical**  | **All Features** | **Categorical** |
 |-------------------------|:---------------:|:----------------:|:---------------:|
-| **Logistic Regression** | 0.9772 - 0.97735 ( - )|   **0.9777** ()|      0.9733 () |
+| **Logistic Regression** | 0.9772 - 0.97735 ( - )|   0.9777 ()|      0.9733 () |
 | **Decision Tree**       | 0.9773 - 0.9773  ( - )|              ()|      0.9734 () |
-| **Random Forest**       |       ()          |   ()                | ()                 |
+| **Random Forest**       |       - **0.9798** ()          |   ()                | ()                 |
 
 |        *AUC ROC*       |  **Numerical**  | **All Features** | **Categorical** |
 |-------------------------|:---------------:|:----------------:|:---------------:|
-| **Logistic Regression** | 0.832 - 0.834 ( - )|   **0.857** ()|      0.800 () |
+| **Logistic Regression** | 0.832 - 0.834 ( - )|   0.857 ()|      0.800 () |
 | **Decision Tree**       | 0.428 - 0.428  ( - )|              ()|      0.707 () |
-| **Random Forest**       |       ()          |   ()                | ()                 |
+| **Random Forest**       |       - **0.845** ()          |   ()                | ()                 |
 
 |        *F1-Score*       |  **Numerical**  | **All Features** | **Categorical** |
 |-------------------------|:---------------:|:----------------:|:---------------:|
-| **Logistic Regression** | 0.7137 - 0.7139 ( - )|   **0.7227** ()|      0.5897 () |
+| **Logistic Regression** | 0.7137 - 0.7139 ( - )|   0.7227 ()|      0.5897 () |
 | **Decision Tree**       | 0.7138 - 0.7138  ( - )|              ()|      0.5961 () |
-| **Random Forest**       |       ()          |   ()                | ()                 |
+| **Random Forest**       |       - **0.7438** ()          |   ()                | ()                 |
 
 |        *Precision*       |  **Numerical**  | **All Features** | **Categorical** |
 |-------------------------|:---------------:|:----------------:|:---------------:|
-| **Logistic Regression** | 0.853 - 0.852 ( - )|   **0.858** ()|      0.706 () |
+| **Logistic Regression** | 0.853 - 0.852 ( - )|   0.858 ()|      0.706 () |
 | **Decision Tree**       | 0.878 - 0.878  ( - )|              ()|      0.732 () |
-| **Random Forest**       |       ()          |   ()                | ()                 |
+| **Random Forest**       |       - **0.937**()          |   ()                | ()                 |
 
 |        *Recall*       |  **Numerical**  | **All Features** | **Categorical** |
 |-------------------------|:---------------:|:----------------:|:---------------:|
-| **Logistic Regression** | 0.613 - 0.614 ( - )|   **0.624** ()|      0.505 () |
+| **Logistic Regression** | 0.613 - 0.614 ( - )|   0.624 ()|      0.505 () |
 | **Decision Tree**       | 0.601 - 0.601  ( - )|              ()|      0.502 () |
-| **Random Forest**       |       ()          |   ()                | ()                 |
+| **Random Forest**       |       - **0.616** ()          |   ()                | ()                 |
 
 `X - Y` means that `X` obtained with standardization (i.e., applying the StandardScaler) while `Y` not.
 `X (Y)` means that `X` obtained without oversampling, while `Y` obtained with oversampling

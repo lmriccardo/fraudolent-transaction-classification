@@ -58,9 +58,9 @@ The following tables shows the results given by the previous experiments
 
 |        *Accuracy*       |  **Numerical**  | **All Features** | **Categorical** |
 |-------------------------|:---------------:|:----------------:|:---------------:|
-| **Logistic Regression** | 0.9772 - 0.97735|   **0.9777**     |      0.9733     |
-| **Decision Tree**       | 0.9773 - 0.9773 |                  |      0.9734     |
-| **Random Forest**       |                 |                  |                 |
+| **Logistic Regression** | 0.9772 - 0.97735 ( - )|   **0.9777** ()|      0.9733 () |
+| **Decision Tree**       | 0.9773 - 0.9773  ( - )|              ()|      0.9734 () |
+| **Random Forest**       |       ()          |   ()                | ()                 |
 
 `X - Y` means that `X` obtained with standardization (i.e., applying the StandardScaler) while `Y` not.
 

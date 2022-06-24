@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1656023170551,"sparkVersion":"3.2.1","uid":"StringIndexer_d0780898a5e1","paramMap":{"inputCol":"P_emaildomain","handleInvalid":"keep","outputCol":"P_emaildomain_indexed"},"defaultParamMap":{"handleInvalid":"error","stringOrderType":"frequencyDesc","outputCol":"StringIndexer_d0780898a5e1__output"}}

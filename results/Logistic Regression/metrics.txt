@@ -1,15 +1,5 @@
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_std_only_numerical ============
 ***************** Training Summary *****************
-|----- Average ROC Area Under the Curve for each sub models
-    + Model #1 / 9 Avg. ROC AUC: 0.834
-    + Model #2 / 9 Avg. ROC AUC: 0.834
-    + Model #3 / 9 Avg. ROC AUC: 0.834
-    + Model #4 / 9 Avg. ROC AUC: 0.819
-    + Model #5 / 9 Avg. ROC AUC: 0.699
-    + Model #6 / 9 Avg. ROC AUC: 0.500
-    + Model #7 / 9 Avg. ROC AUC: 0.813
-    + Model #8 / 9 Avg. ROC AUC: 0.500
-    + Model #9 / 9 Avg. ROC AUC: 0.500
 |----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.000]
 |----- Best Model Stages
 VectorAssembler_007acb8170df
@@ -23,21 +13,10 @@ LogisticRegressionModel: uid=LogisticRegression_825a9ee41b85, numClasses=2, numF
     + Accuracy 0.977247056407448
     + F1-score 0.7137621015522558
     + AUC ROC 0.8329825830951167
-    + Matthews correlation coefficient ? 
 =============================================================================
 
 ========= SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_numerical ============
 ***************** Training Summary *****************
-|----- Average ROC Area Under the Curve for each sub models
-    + Model #1 / 9 Avg. ROC AUC: 0.835
-    + Model #2 / 9 Avg. ROC AUC: 0.835
-    + Model #3 / 9 Avg. ROC AUC: 0.835
-    + Model #4 / 9 Avg. ROC AUC: 0.819
-    + Model #5 / 9 Avg. ROC AUC: 0.698
-    + Model #6 / 9 Avg. ROC AUC: 0.502
-    + Model #7 / 9 Avg. ROC AUC: 0.813
-    + Model #8 / 9 Avg. ROC AUC: 0.502
-    + Model #9 / 9 Avg. ROC AUC: 0.500
 |----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.000]
 |----- Best Model Stages
 VectorAssembler_94f5415dd63b
@@ -56,16 +35,6 @@ LogisticRegressionModel: uid=LogisticRegression_ff08d75fa89f, numClasses=2, numF
 
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_over_only_numerical ============
 ***************** Training Summary *****************
-|----- Average ROC Area Under the Curve for each sub models
-    + Model #1 / 9 Avg. ROC AUC: 0.844
-    + Model #2 / 9 Avg. ROC AUC: 0.844
-    + Model #3 / 9 Avg. ROC AUC: 0.844
-    + Model #4 / 9 Avg. ROC AUC: 0.833
-    + Model #5 / 9 Avg. ROC AUC: 0.807
-    + Model #6 / 9 Avg. ROC AUC: 0.784
-    + Model #7 / 9 Avg. ROC AUC: 0.829
-    + Model #8 / 9 Avg. ROC AUC: 0.783
-    + Model #9 / 9 Avg. ROC AUC: 0.730
 |----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.500]
 |----- Best Model Stages
 VectorAssembler_60b4cccaa6e5
@@ -83,16 +52,6 @@ LogisticRegressionModel: uid=LogisticRegression_f18ebf5560e8, numClasses=2, numF
 
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_std_over_only_numerical ============
 ***************** Training Summary *****************
-|----- Average ROC Area Under the Curve for each sub models
-    + Model #1 / 9 Avg. ROC AUC: 0.844
-    + Model #2 / 9 Avg. ROC AUC: 0.844
-    + Model #3 / 9 Avg. ROC AUC: 0.844
-    + Model #4 / 9 Avg. ROC AUC: 0.833
-    + Model #5 / 9 Avg. ROC AUC: 0.807
-    + Model #6 / 9 Avg. ROC AUC: 0.784
-    + Model #7 / 9 Avg. ROC AUC: 0.829
-    + Model #8 / 9 Avg. ROC AUC: 0.783
-    + Model #9 / 9 Avg. ROC AUC: 0.730
 |----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[1.000]
 |----- Best Model Stages
 VectorAssembler_5c194b5a3f7a
@@ -111,16 +70,6 @@ LogisticRegressionModel: uid=LogisticRegression_ea5aab9746c7, numClasses=2, numF
 
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_only_categorical ============
 ***************** Training Summary *****************
-|----- Average ROC Area Under the Curve for each sub models
-    + Model #1 / 9 Avg. ROC AUC: 0.798
-    + Model #2 / 9 Avg. ROC AUC: 0.798
-    + Model #3 / 9 Avg. ROC AUC: 0.798
-    + Model #4 / 9 Avg. ROC AUC: 0.788
-    + Model #5 / 9 Avg. ROC AUC: 0.690
-    + Model #6 / 9 Avg. ROC AUC: 0.500
-    + Model #7 / 9 Avg. ROC AUC: 0.780
-    + Model #8 / 9 Avg. ROC AUC: 0.500
-    + Model #9 / 9 Avg. ROC AUC: 0.500
 |----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[0.500]
 |----- Best Model Stages
 StringIndexerModel: uid=StringIndexer_8e796333a4cc, handleInvalid=keep
@@ -166,16 +115,6 @@ LogisticRegressionModel: uid=LogisticRegression_7c8a76f5915c, numClasses=2, numF
 
 ============ SUMMARIZING FOR EXPERIMENT lr_cv_nostd_over_only_categorical ============
 ***************** Training Summary *****************
-|----- Average ROC Area Under the Curve for each sub models
-    + Model #1 / 9 Avg. ROC AUC: 0.801
-    + Model #2 / 9 Avg. ROC AUC: 0.801
-    + Model #3 / 9 Avg. ROC AUC: 0.801
-    + Model #4 / 9 Avg. ROC AUC: 0.797
-    + Model #5 / 9 Avg. ROC AUC: 0.775
-    + Model #6 / 9 Avg. ROC AUC: 0.770
-    + Model #7 / 9 Avg. ROC AUC: 0.795
-    + Model #8 / 9 Avg. ROC AUC: 0.769
-    + Model #9 / 9 Avg. ROC AUC: 0.690
 |----- Best model parameters according to K-Fold Cross Validation: lambda=[0.000]; alfa=[1.000]
 |----- Best Model Stages
 StringIndexerModel: uid=StringIndexer_3943c40b06d9, handleInvalid=keep

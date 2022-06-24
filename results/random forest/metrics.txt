@@ -154,3 +154,93 @@ RandomForestClassificationModel: uid=RandomForestClassifier_e1340b816219, numTre
     + Matthews correlation coefficient 0.20094024908750047
     + AUC ROC 0.8106957637260203
 ======================================================================================
+
+============ SUMMARIZING FOR EXPERIMENT rf_cv_nostd_all_features ============
+***************** Training Summary *****************
+|----- Best model parameters according to K-Fold Cross Validation: maxDepth=[8]
+|----- Best Model Stages
+StringIndexerModel: uid=StringIndexer_756b40d13dd5, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e0483cda803e, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_edd88f563c80, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d0780898a5e1, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_575656600589, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_63a78c8b443f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_de0c6d26451a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_08e3f4c84c6f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_8f30d913e204, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_906bf2acae3b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_1b15afa022be, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_187c8a0c3fc9, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e8e487e8d932, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_cf105b0e71fd, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_1dbe57e40eee, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_8075725a9850, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_310a3b99a3c7, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ea83b3a597fe, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f6c01a824d63, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ec28dd6700c0, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5766581b5723, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_23f65ae6b5a2, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f5e3c3d31a79, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_31b3420f8778, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_2cea8875894f, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_eda2efc7c6cc, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_1f77bf7b8ba7, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_3ac44f0f370d, handleInvalid=keep
+VectorAssembler_fcfee1e0c337
+RandomForestClassificationModel: uid=RandomForestClassifier_e2d9b2bb4ae1, numTrees=50, numClasses=2, numFeatures=231
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.9304897141147712
+    + Recall 0.6130049856076292
+    + Accuracy 0.9786589539978094
+    + F1-score 0.7390952931831364
+    + Matthews correlation coefficient 0.4411234926764708
+    + AUC ROC 0.8488803994685692
+=============================================================================
+
+============ SUMMARIZING FOR EXPERIMENT rf_cv_nostd_over_all_features ============
+***************** Training Summary *****************
+|----- Best model parameters according to K-Fold Cross Validation: maxDepth=[8]
+|----- Best Model Stages
+StringIndexerModel: uid=StringIndexer_79fd9bcb9609, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_c1db21c75824, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6ce7166d2a35, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_9ef3af04a73e, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_eff4bfd7c67c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ac8d2b1130eb, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_390ae10613e5, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ff3b3bd6e070, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_8bf7f3d124e9, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d6b644df6975, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_70791a90358e, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6b6e54c8a5b7, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_73c561d4c95a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_eaafc17f8539, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7ea2dded43c8, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7c1763d88c81, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_35d9361b9dbf, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b1c6f314a510, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_4cf347df4013, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5292bc6e906c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ec1d667fef40, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_00ec64573fae, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_90af9415b4ca, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f8abf5b77bf1, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_816d9596572e, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_686f03ffceec, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f745330d1bbd, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_879557bb780f, handleInvalid=keep
+VectorAssembler_890d630b12f9
+RandomForestClassificationModel: uid=RandomForestClassifier_9208c8b5f0bc, numTrees=100, numClasses=2, numFeatures=231
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.6166589708523571
+    + Recall 0.7684994948251251
+    + Accuracy 0.9410468578860898
+    + F1-score 0.6842568837026629
+    + Matthews correlation coefficient 0.3539653923234693
+    + AUC ROC 0.8729099678699649
+==================================================================================

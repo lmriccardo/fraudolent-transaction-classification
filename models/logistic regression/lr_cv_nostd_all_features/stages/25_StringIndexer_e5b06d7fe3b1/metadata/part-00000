@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1656065168715,"sparkVersion":"3.2.1","uid":"StringIndexer_e5b06d7fe3b1","paramMap":{"outputCol":"DeviceType_indexed","handleInvalid":"keep","inputCol":"DeviceType"},"defaultParamMap":{"outputCol":"StringIndexerModel_c2421809f03a__output","stringOrderType":"frequencyDesc","handleInvalid":"error"}}

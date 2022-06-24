@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1656066346801,"sparkVersion":"3.2.1","uid":"StringIndexer_3943c40b06d9","paramMap":{"outputCol":"ProductCD_indexed","handleInvalid":"keep","inputCol":"ProductCD"},"defaultParamMap":{"outputCol":"StringIndexerModel_3586ac954512__output","stringOrderType":"frequencyDesc","handleInvalid":"error"}}

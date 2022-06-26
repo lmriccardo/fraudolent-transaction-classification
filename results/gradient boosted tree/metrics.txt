@@ -1,0 +1,158 @@
+============ SUMMARIZING FOR EXPERIMENT gbt_cv_nostd_over_only_numerical ============
+***************** Training Summary *****************
+|----- Model parameters: maxDepth=[8]; maxIter=[50]
+|----- Best Model Stages
+VectorAssembler_32cc2ec0ab7e
+GBTClassificationModel: uid = GBTClassifier_940598f24a77, numTrees=50, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+----- General Metrics
+    + Precision 0.6372501298653945
+    + Recall 0.8456898428155795
+    + Accuracy 0.9428951601861993
+    + F1-score 0.7268210070374986
+    + AUC ROC 0.9308236499589787
+=====================================================================================
+
+============ SUMMARIZING FOR EXPERIMENT gbt_cv_nostd_only_numerical ============
+***************** Training Summary *****************
+|----- Model parameters: maxDepth=[8]; maxIter=[50]
+|----- Best Model Stages
+VectorAssembler_bbd68a87303a
+GBTClassificationModel: uid = GBTClassifier_b05196297186, numTrees=50, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.9328288911771181
+    + Recall 0.7251172820743921
+    + Accuracy 0.983814519441402
+    + F1-score 0.8159617738183462
+    + Matthews correlation coefficient 0.6242988501833577
+    + AUC ROC 0.9115470513273745
+================================================================================
+
+============ SUMMARIZING FOR EXPERIMENT gbt_cv_std_only_numerical ============
+***************** Training Summary *****************
+|----- Model parameters: maxDepth=[8]; maxIter=[50]
+|----- Best Model Stages
+VectorAssembler_413709d774c0
+StandardScalerModel: uid=StandardScaler_188b21694e41, numFeatures=204, withMean=true, withStd=true
+GBTClassificationModel: uid = GBTClassifier_f14a853c5eb9, numTrees=50, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.9325474392208113
+    + Recall 0.7235083954140278
+    + Accuracy 0.9837332283680176
+    + F1-score 0.8148347263265827
+    + Matthews correlation coefficient 0.621861669764877
+    + AUC ROC 0.9139047553590527
+==============================================================================
+
+============ SUMMARIZING FOR EXPERIMENT gbt_cv_std_over_only_numerical ============
+***************** Training Summary *****************
+|----- Model parameters: maxDepth=[8]; maxIter=[50]
+|----- Best Model Stages
+VectorAssembler_956db7063fe6
+StandardScalerModel: uid=StandardScaler_8682dc2d7cec, numFeatures=204, withMean=true, withStd=true
+GBTClassificationModel: uid = GBTClassifier_a69a913fae77, numTrees=50, numClasses=2, numFeatures=204
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.6376730960284476
+    + Recall 0.8447554725759228
+    + Accuracy 0.9432117675246441
+    + F1-score 0.7267504809241503
+    + Matthews correlation coefficient 0.43572263325321003
+    + AUC ROC 0.9316952489439508
+===================================================================================
+
+============ SUMMARIZING FOR EXPERIMENT gbt_cv_nostd_only_categorical ============
+***************** Training Summary *****************
+|----- Model Parameters: maxDepth=[8]; maxIter=[50]
+|----- Best Model Stages
+StringIndexerModel: uid=StringIndexer_122e149e6196, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5213fbdd964b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7ec715ff3b02, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_fd3b5f193c52, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ad7720e68ef9, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_6dbf7037518b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_f24dac94c1af, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_99d267dcc110, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b24b3b14e876, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_a05ae878ae79, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d237779122bc, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_4a30fdb1bd98, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_2a2963a59778, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_4df8fee56d28, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_69776939eafd, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5fb108d7a004, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7d59bfa37685, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_a29f36d6fa1a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e17bdb464cc1, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_07aee7a3e39a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5af0cf766381, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_32afb71dfd27, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_54032d29a265, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_15676200bbfb, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_80707aeb12f4, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_57e57474161e, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_79534c6296ff, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_9a69c74e8d30, handleInvalid=keep
+VectorAssembler_eb0fbee89faa
+GBTClassificationModel: uid = GBTClassifier_553e7562b337, numTrees=50, numClasses=2, numFeatures=27
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.8211805182853962
+    + Recall 0.5433826556694986
+    + Accuracy 0.9746115142387732
+    + F1-score 0.6540045332114808
+    + Matthews correlation coefficient 0.23608188268078886
+    + AUC ROC 0.8456048388799363
+==================================================================================
+
+============ SUMMARIZING FOR EXPERIMENT gbt_cv_nostd_over_only_categorical ============
+***************** Training Summary *****************
+|----- Model Parameters: maxDepth=[8]; maxIter=[50]
+|----- Best Model Stages
+StringIndexerModel: uid=StringIndexer_bdd968aea43a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b44389659aeb, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_0459f3ebad8b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_8f99bb2c43db, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_add958999fe0, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_c3cb83e21ed9, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_30cec28e7673, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_addfe4b22a6a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d5ae39821ebc, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_3dd441fbbafc, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_dd3ed95773f0, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_1ecbafe3816d, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_774d8c43d215, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ad456d67f229, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_d750d2e68666, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ea7f9f0fdfef, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_2e9791575517, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_b027deffb5c8, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_ae5eb51a35dc, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_bdc1126adb7c, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_fa70728aff24, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_44dd846ba07e, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_7a22f6dad2a9, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_e8ac8175a3c3, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_5339238a0e5a, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_717f9a286c7b, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_08585bb7f7e6, handleInvalid=keep
+StringIndexerModel: uid=StringIndexer_fb6e417c21b2, handleInvalid=keep
+VectorAssembler_e80d7f5a282a
+GBTClassificationModel: uid = GBTClassifier_64abce94a170, numTrees=50, numClasses=2, numFeatures=27
+
+***************** Test Summary *****************
+|----- General Metrics
+    + Precision 0.559317720235051
+    + Recall 0.748121032558256
+    + Accuracy 0.8823033611719606
+    + F1-score 0.6400871161213421
+    + Matthews correlation coefficient 0.24263531477278902
+    + AUC ROC 0.8501210375900397
+=======================================================================================
